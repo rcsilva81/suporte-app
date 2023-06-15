@@ -10,10 +10,10 @@ var logger = require('morgan');
 
 var app = express();
 
-export const routes = express.Router();
+var routes = express.Router();
 
 routes.get("/", './routes/index');
-routes.get("/users", "./routes/users");
+routes.get("/users", './routes/users');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
